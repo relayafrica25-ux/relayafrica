@@ -1,5 +1,6 @@
 {
   "name": "Relay.africa",
   "description": "A futuristic platform connecting world-class pre-vetted African engineers with European companies.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "majorCapabilities": []
 }

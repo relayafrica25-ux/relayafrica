@@ -27,6 +27,7 @@ import { MOCK_ENGINEERS } from './constants';
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<View>(View.HOME);
   const [selectedEngineer, setSelectedEngineer] = useState<Engineer | null>(null);
+  const [authRole, setAuthRole] = useState<'company' | 'engineer'>('company');
 
   const navigateToEngineers = () => {
     setCurrentView(View.ENGINEERS);
@@ -34,16 +35,19 @@ const App: React.FC = () => {
   };
   
   const navigateToApply = () => {
+    setAuthRole('engineer');
     setCurrentView(View.APPLY);
     window.scrollTo(0, 0);
   };
 
-  const navigateToLogin = () => {
+  const navigateToLogin = (role: 'company' | 'engineer' = 'company') => {
+    setAuthRole(role);
     setCurrentView(View.LOGIN);
     window.scrollTo(0, 0);
   };
   
-  const navigateToSignup = () => {
+  const navigateToSignup = (role: 'company' | 'engineer' = 'company') => {
+    setAuthRole(role);
     setCurrentView(View.SIGNUP);
     window.scrollTo(0, 0);
   };
@@ -99,7 +103,7 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#0a0a12] text-white selection:bg-relay-accent selection:text-black font-sans">
-      <Navbar currentView={currentView} setCurrentView={setCurrentView} />
+      <Navbar currentView={currentView} setCurrentView={setCurrentView} onNavigateLogin={navigateToLogin} onNavigateSignup={navigateToSignup} onNavigateApply={navigateToApply} />
       
       <main>
         {currentView === View.HOME && (
@@ -133,8 +137,8 @@ const App: React.FC = () => {
         {currentView === View.ENGINEERS && (
           <div className="pt-20 animate-fade-in">
              <div className="bg-[#0d0d17] py-16 text-center px-4">
-                <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">World-Class Talent</h1>
-                <p className="text-gray-400 max-w-2xl mx-auto">
+                <h1 className="text-4xl md:text-5xl font-display font-light mb-4">World-Class <span className="font-medium">Talent</span></h1>
+                <p className="text-gray-400 max-w-2xl mx-auto font-light text-lg">
                   Browse our directory of pre-vetted talent ready to join your team.
                 </p>
              </div>
@@ -145,8 +149,8 @@ const App: React.FC = () => {
                 onRequestIntro={handleRequestIntro} 
               />
              <div className="bg-[#0a0a12] py-20 text-center">
-                <h3 className="text-2xl font-bold mb-6">Didn't find what you're looking for?</h3>
-                <button className="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition-colors">
+                <h3 className="text-2xl font-display font-light mb-6">Didn't find what you're looking for?</h3>
+                <button className="bg-white text-black px-8 py-4 rounded-full font-semibold shadow-xl hover:bg-gray-200 transition-colors uppercase tracking-wide text-xs">
                   Contact Sales for Custom Search
                 </button>
              </div>
@@ -194,10 +198,10 @@ const App: React.FC = () => {
         {(currentView === View.LOGIN || currentView === View.SIGNUP || currentView === View.APPLY) && (
           <Auth 
             mode={currentView === View.LOGIN ? 'login' : 'signup'}
-            onSwitchMode={currentView === View.LOGIN ? navigateToSignup : navigateToLogin}
+            onSwitchMode={() => currentView === View.LOGIN ? navigateToSignup(authRole) : navigateToLogin(authRole)}
             onNavigateToEngineers={navigateToEngineers}
             onNavigateToApply={navigateToApply}
-            defaultRole={currentView === View.APPLY ? 'engineer' : 'company'}
+            defaultRole={currentView === View.APPLY ? 'engineer' : authRole}
             hideRoleToggle={currentView === View.APPLY}
             onAuthSuccess={(role) => {
               if (role === 'engineer') {

@@ -94,7 +94,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€3,500/mo",
     salaryRange: "$60K-70K",
     availability: "Available",
-    imageUrl: "https://i.pravatar.cc/400?u=ademola",
+    imageUrl: "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?w=400&h=400&fit=crop",
     currentCompany: "Flutterwave",
     timezone: "WAT (GMT+1)",
     englishLevel: "Fluent",
@@ -166,7 +166,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€3,200/mo",
     salaryRange: "$50K-60K",
     availability: "Available",
-    imageUrl: "https://i.pravatar.cc/400?u=chioma_n"
+    imageUrl: "https://images.unsplash.com/photo-1531123414780-f74242c2b052?w=400&h=400&fit=crop"
   },
   {
     id: '3',
@@ -181,7 +181,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€3,400/mo",
     salaryRange: "$55K-65K",
     availability: "Interviewing",
-    imageUrl: "https://i.pravatar.cc/400?u=tunde_b"
+    imageUrl: "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?w=400&h=400&fit=crop"
   },
   {
     id: '4',
@@ -196,7 +196,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€3,000/mo",
     salaryRange: "$50K-60K",
     availability: "Available",
-    imageUrl: "https://i.pravatar.cc/400?u=ngozi"
+    imageUrl: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=400&h=400&fit=crop"
   },
   {
     id: '5',
@@ -211,7 +211,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€4,200/mo",
     salaryRange: "$65K-75K",
     availability: "Available",
-    imageUrl: "https://i.pravatar.cc/400?u=emeka_e"
+    imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
   },
   {
     id: '6',
@@ -226,7 +226,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€3,600/mo",
     salaryRange: "$60K-70K",
     availability: "Available",
-    imageUrl: "https://i.pravatar.cc/400?u=amara"
+    imageUrl: "https://images.unsplash.com/photo-1523824921871-d6f1a15151f1?w=400&h=400&fit=crop"
   },
   {
     id: '7',
@@ -241,7 +241,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€2,800/mo",
     salaryRange: "$45K-55K",
     availability: "Available",
-    imageUrl: "https://i.pravatar.cc/400?u=seun"
+    imageUrl: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=400&h=400&fit=crop"
   },
   {
     id: '8',
@@ -256,7 +256,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€3,100/mo",
     salaryRange: "$50K-60K",
     availability: "Interviewing",
-    imageUrl: "https://i.pravatar.cc/400?u=folake"
+    imageUrl: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&h=400&fit=crop"
   },
   {
     id: '9',
@@ -271,7 +271,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€3,800/mo",
     salaryRange: "$60K-70K",
     availability: "Available",
-    imageUrl: "https://i.pravatar.cc/400?u=chinedu"
+    imageUrl: "https://images.unsplash.com/photo-1515077678510-ce3bdf418862?w=400&h=400&fit=crop"
   },
   {
     id: '10',
@@ -286,7 +286,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€3,000/mo",
     salaryRange: "$50K-60K",
     availability: "Available",
-    imageUrl: "https://i.pravatar.cc/400?u=adaeze"
+    imageUrl: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=400&fit=crop"
   },
   {
     id: '11',
@@ -301,7 +301,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€3,300/mo",
     salaryRange: "$55K-65K",
     availability: "Available",
-    imageUrl: "https://i.pravatar.cc/400?u=kunle"
+    imageUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop"
   },
   {
     id: '12',
@@ -316,7 +316,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€3,400/mo",
     salaryRange: "$55K-65K",
     availability: "Interviewing",
-    imageUrl: "https://i.pravatar.cc/400?u=yetunde"
+    imageUrl: "https://images.unsplash.com/photo-1554727242-741c14fa561c?w=400&h=400&fit=crop"
   },
   {
     id: '13',
@@ -331,7 +331,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€4,500/mo",
     salaryRange: "$70K-80K",
     availability: "Available",
-    imageUrl: "https://i.pravatar.cc/400?u=biodun"
+    imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop"
   },
   {
     id: '14',
@@ -346,7 +346,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€4,000/mo",
     salaryRange: "$65K-75K",
     availability: "Available",
-    imageUrl: "https://i.pravatar.cc/400?u=ifeanyi"
+    imageUrl: "https://images.unsplash.com/photo-1528892952291-009c663ce843?w=400&h=400&fit=crop"
   },
   {
     id: '15',
@@ -361,7 +361,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€3,100/mo",
     salaryRange: "$50K-60K",
     availability: "Placed",
-    imageUrl: "https://i.pravatar.cc/400?u=nneka"
+    imageUrl: "https://images.unsplash.com/photo-1546825902-140cfa959a72?w=400&h=400&fit=crop"
   },
   {
     id: '16',
@@ -376,7 +376,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€3,200/mo",
     salaryRange: "$45K-60K",
     availability: "Available",
-    imageUrl: "https://i.pravatar.cc/400?u=simi"
+    imageUrl: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=400&h=400&fit=crop"
   },
   {
     id: '17',
@@ -391,7 +391,7 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€3,000/mo",
     salaryRange: "$40K-55K",
     availability: "Interviewing",
-    imageUrl: "https://i.pravatar.cc/400?u=farid"
+    imageUrl: "https://images.unsplash.com/photo-1566492031773-4f4e11ea850e?w=400&h=400&fit=crop"
   },
   {
     id: '18',
@@ -406,6 +406,6 @@ export const MOCK_ENGINEERS: Engineer[] = [
     rate: "€2,500/mo",
     salaryRange: "$35K-50K",
     availability: "Available",
-    imageUrl: "https://i.pravatar.cc/400?u=bisi"
+    imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop"
   }
 ];
